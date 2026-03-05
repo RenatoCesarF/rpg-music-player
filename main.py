@@ -21,6 +21,9 @@ player = vlc.MediaPlayer()
 pygame.init()
 font = pygame.font.Font(pygame.font.get_default_font(), 20)
 
+# - [ ] Playpause indicator
+# - [ ] Volumn control
+
 def main():
     clock = pygame.time.Clock()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -39,7 +42,7 @@ def main():
 
     while running:
         screen.fill((25, 25, 25))
-        write(screen, "Pastas disponíveis:", (LEFT_MARGIN, TOP_MARGIN), (255, 255, 255))
+        write(screen, "Playlists:", (LEFT_MARGIN, TOP_MARGIN), (255, 255, 255))
         for i, folder in enumerate(folders):
             y_pos = TOP_MARGIN + 20 + i * 25
             write(screen, f"{str(i)} - {folder}", pos=(LEFT_MARGIN, y_pos), color=(255, 255, 255))
@@ -116,7 +119,7 @@ def draw_current_music_cover(screen, playing_music):
     screen.blit(cover, (SCREEN_WIDTH - RIGHT_MARGIN - cover.get_width() - 20, TOP_MARGIN + 10 ))
 
 def draw_current_music(screen, playing_music):
-    write(screen, f"Tocando: {playing_music["path"].split("/")[-1]}", (LEFT_MARGIN, 280), (255, 255, 255))
+    write(screen, f"Playing: {playing_music["path"].split("/")[-1]}", (LEFT_MARGIN, 280), (255, 255, 255))
 
     play_time_progress = 0
     if player.get_length() > 0:
