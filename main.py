@@ -1,7 +1,7 @@
 import os
-from datetime import datetime
 import random
 import sys
+
 import pygame
 import vlc
 
@@ -60,7 +60,6 @@ def main():
 
         if playing_music and playing_music.get("path") is not None:
             draw_current_music_cover(screen, playing_music)
-
             draw_current_music(screen, playing_music)
 
         for event in pygame.event.get():
