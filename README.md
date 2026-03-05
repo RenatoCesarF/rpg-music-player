@@ -1,6 +1,6 @@
 # RPG Music Player
 
-<img width="593" height="344" alt="Screenshot 2026-03-05 at 15 07 51" src="https://github.com/user-attachments/assets/a7cde1c1-5dd5-4ad1-a616-c171e1e9e3fd" />
+<img width="593" height="344" alt="Screenshot 2026-03-05 at 15 12 39" src="https://github.com/user-attachments/assets/4a1affbf-5ca6-4a8a-99b7-a26015aa4d53" />
 
 ## Description
 
@@ -11,6 +11,7 @@ This is a simple RPG music player made with Python and pygame.
 ## Features
 
 - Play random music from a folder (playlist)
+- Play next music from playlist when current music finishes
 - Display cover art if available
 - Skip music
 - Skip music time (15s, -15s)
