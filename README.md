@@ -1,10 +1,8 @@
 # RPG Music Player
-
-<img width="593" height="344" alt="Screenshot 2026-03-05 at 15 12 39" src="https://github.com/user-attachments/assets/4a1affbf-5ca6-4a8a-99b7-a26015aa4d53" />
+<img width="596" height="348" alt="Screenshot 2026-03-05 at 15 18 31" src="https://github.com/user-attachments/assets/cef3d07f-b074-478a-b650-1f4c727cde3e" />
 
 ## Description
-
-This is a simple RPG music player made with Python and pygame.
+This is a simple RPG music player made with Python and pygame. The idea is to separate music into mood folders that can be played easily
 
 > The musics folder should be put in `./musics` besides the main.py file, each folder is a playlist.
 
