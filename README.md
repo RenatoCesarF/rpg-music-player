@@ -6,6 +6,8 @@
 
 This is a simple RPG music player made with Python and pygame.
 
+> The musics folder should be put in `./musics` besides the main.py file, each folder is a playlist.
+
 ## Features
 
 - Play random music from a folder (playlist)
@@ -29,7 +31,7 @@ This is a simple RPG music player made with Python and pygame.
 | n     | Skip music      |
 | h     | Skip -15s       |
 | l     | Skip 15s        |
-| 0..9  | Select Playlist |
+| 0...9 | Select Playlist |
 
 ## Screenshots
 
