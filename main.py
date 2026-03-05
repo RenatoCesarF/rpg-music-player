@@ -16,7 +16,6 @@ LEFT_MARGIN = 15
 base_folder_dir = "./musics/"
 folders_to_ignore = []
 
-
 player = vlc.MediaPlayer()
 
 pygame.init()
