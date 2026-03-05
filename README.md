@@ -1,6 +1,6 @@
 # RPG Music Player
 
-![Screenshot 1](https://github.com/RenatoCesarF/rpg-music-player/assets/10070716/f0f1d0e8-a1c0-4f3b-b8b5-f8f2e3f7f9d8)
+<img width="593" height="344" alt="Screenshot 2026-03-05 at 15 07 51" src="https://github.com/user-attachments/assets/a7cde1c1-5dd5-4ad1-a616-c171e1e9e3fd" />
 
 ## Description
 
@@ -23,6 +23,12 @@ This is a simple RPG music player made with Python and pygame.
 4. Install the required packages with `pip install -r requirements.txt`
 5. Run the main script with `python main.py`
 
+## Usage
+1. Create a `./musics` folder
+2. Create any folder there, to use as a mood playlist
+3. Put the musics in the folders
+4. Run the Program
+
 ## Controllers
 
 | Key   | Action          |
@@ -33,6 +39,5 @@ This is a simple RPG music player made with Python and pygame.
 | l     | Skip 15s        |
 | 0...9 | Select Playlist |
 
-## Screenshots
 
-![Screenshot 3](https://github.com/RenatoCesarF/rpg-music-player/assets/10070716/a8a7b7f8-f7a1-4b0a-b8b5-f8f2e3f7f9d8)
+
