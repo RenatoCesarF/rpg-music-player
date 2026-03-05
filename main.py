@@ -119,7 +119,8 @@ def draw_current_music_cover(screen, playing_music):
     screen.blit(cover, (SCREEN_WIDTH - RIGHT_MARGIN - cover.get_width() - 20, TOP_MARGIN + 10 ))
 
 def draw_current_music(screen, playing_music):
-    write(screen, f"Playing: {playing_music["path"].split("/")[-1]}", (LEFT_MARGIN, 280), (255, 255, 255))
+    music_name = normalize_filename(playing_music["path"])
+    write(screen, f"Playing: {music_name}", (LEFT_MARGIN, 280), (255, 255, 255))
 
     play_time_progress = 0
     if player.get_length() > 0:
@@ -131,6 +132,10 @@ def draw_current_music(screen, playing_music):
 
     write(screen, f"Playtime: {time_lenght_format(player.get_length())}", (LEFT_MARGIN, 315), (255, 255, 255))
 
+def normalize_filename(filename):
+    removed_folders = filename.split("/")[-1]
+    removed_extension = removed_folders.split(".")[0]
+    return removed_extension.split("_")[0]
 
 def time_lenght_format(time_length):
     seconds = time_length // 1000
