@@ -55,7 +55,11 @@ def main():
         length = player.get_length()
         current = player.get_time()
 
-        if length > 0 and current >= length:
+        print("length", length)
+        print("current", current)
+
+        if length > 0 and current >= length - length/100:
+            print("playing next")
             playing_music = play_random_music(last_selected_playlist.get("path"))
 
         if playing_music and playing_music.get("path") is not None:
